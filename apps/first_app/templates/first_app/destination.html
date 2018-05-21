@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+
+    <a href="/travels">Home</a>
+    <a href="/logout">Logout</a>
+    <h1>{{place.destination}}</h1>
+    <br>
+    <p>Planned by: {{place.travllers.first.name}}</p>
+    <p>Description: {{place.description}}</p>
+    <p>Travel Date From: {{place.start_date}}</p>
+    <p>Travel Date To: {{place.end_date}}</p>
+
+
+    <h4>Other user's Joing the trip:</h4>
+      {%for user in place.travllers.all|slice:'1:' %}
+        <p>{{user.name}}</p>
+      {% endfor %}
+  </body>
+</html>

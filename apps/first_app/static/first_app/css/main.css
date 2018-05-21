@@ -1,0 +1,37 @@
+.message{
+  height: 200px;
+  width: 800px;
+  padding-top: 50px;
+  padding-left: 100px;
+}
+.register{
+  height: 500px;
+  width: 400px;
+  display: inline-block;
+  vertical-align: top;
+  text-align: right;
+}
+.login{
+  height: 500px;
+  width: 400px;
+  display: inline-block;
+  vertical-align: top;
+  text-align: right;
+  border-left: 1.5px solid silver;
+  margin-left: 70px;
+}
+input{
+  margin: 15px 20px;
+  height: 25px;
+  width: 200px;
+  border: 2px solid silver;
+}
+h1{
+  margin-right: 200px;
+}
+
+.button{
+  height: 40px;
+  width: 90px;
+  background-color: lightgreen;
+}
